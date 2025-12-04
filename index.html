@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WhitenIND — Learn. Sell. Earn. Live Digital Freedom.</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- QR code library (lightweight CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>WhitenIND</h1>
+      <p class="tagline">Learn. Sell. Earn. Live Digital Freedom.</p>
+      <a class="cta" href="#courses">Explore Courses</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>Digital Freedom Course</h2>
+      <p>
+        Ye ek knowledge-packed course + PDFs ka bundle hai. Price: <strong>₹10,000</strong>.
+        Affiliates ko high commission milti hai (manual crediting by admin).
+      </p>
+      <ul>
+        <li>Instant QR payment display (UPI) — buyer scan kare</li>
+        <li>Manual verification & crediting by admin</li>
+        <li>Top 10 sellers leaderboard — photo & name show</li>
+      </ul>
+    </section>
+
+    <section id="payment" class="card">
+      <h2>Payment Page — Scan & Pay</h2>
+      <p>Amount: <strong>₹10,000</strong></p>
+
+      <div class="qr-wrap">
+        <div id="qrcode"></div>
+        <div class="upi-details">
+          <p><strong>UPI ID:</strong> <span id="upiId">ravikishankumar2200548@okhdfcbank</span></p>
+          <p><strong>Amount:</strong> ₹10,000</p>
+        </div>
+      </div>
+
+      <ol class="steps">
+        <li>Scan the QR with any UPI app (buyer will push the payment).</li>
+        <li>Pay the exact amount ₹10,000 and note the transaction id.</li>
+        <li>Click <strong>"Payment Done — Send Screenshot"</strong> to notify admin.</li>
+      </ol>
+
+      <!-- WhatsApp button (opens WhatsApp Web / Mobile). Replace phone if you want a specific admin number. -->
+      <button id="waBtn" class="btn">Payment Done — Send Screenshot</button>
+
+      <p class="note">
+        Note: Payment receiving and crediting is done manually by admin. After verification you will get course access.
+      </p>
+    </section>
+
+    <section id="courses" class="card">
+      <h2>What's included</h2>
+      <ul>
+        <li>Full Digital Freedom Course (PDF bundle)</li>
+        <li>Multiple Ebooks & Worksheets</li>
+        <li>Sales scripts, funnel templates, and marketing assets</li>
+      </ul>
+      <a class="btn" href="#payment">Buy Now (Scan QR)</a>
+    </section>
+
+    <section id="top-sellers" class="card">
+      <h2>Top 10 Sellers</h2>
+      <div id="sellersGrid" class="grid"></div>
+      <p class="small">(Update <code>sellers.json</code> in repo to change these)</p>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact / Support</h2>
+      <p>If buyer wants help, they can message admin. You can share WhatsApp / Email here.</p>
+      <p>Admin Email: <em>add-your-email@domain.com</em> (optional)</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© <span id="year"></span> WhitenIND — Learn. Sell. Earn. Live Digital Freedom.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
